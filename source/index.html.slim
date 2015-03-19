@@ -1,0 +1,35 @@
+---
+title: Welcome to Middleman
+---
+
+#billboard
+  .row
+    .col-md-5
+      p.text-center
+        = image_tag "phone.res.png"
+    .col-md-7
+      #promo-text
+        h1.brand АллегроТайм
+        h2 Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти из-за прохода поезда Аллегро
+
+
+#screenshots
+  .row
+    = partial "screenshot", locals: { image_name: "mockup-5-1", title: "Открыт ли переезд?" }
+    = partial "screenshot", locals: { image_name: "mockup-5-2", title: "Статус всех переездов" }
+    = partial "screenshot", locals: { image_name: "mockup-5-3", title: "Расписание переезда" }
+    = partial "screenshot", locals: { image_name: "mockup-5-4", title: "Расписание Аллегро" }
+    = partial "screenshot", locals: { image_name: "mockup-5-5", title: "Карта переездов" }
+    = partial "screenshot", locals: { image_name: "mockup-ipad-v-350", title: "Работает на iPad" }
+
+#support
+  p.text-center 
+    | Если вы знаете что расписание переезда изменилось более чем на три минуты — пришлите мне фото синий таблички расположенной около переезда: 
+    = link_to "allegrotime@yandex.ru"
+  
+#footer
+  hr
+  p 
+    | &copy; 2012–2015 Дмитрий Сокуренко
+    br
+    = link_to "allegrotime@yandex.ru"
