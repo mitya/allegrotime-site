@@ -3,34 +3,37 @@ title: Welcome to Middleman
 ---
 
 #billboard
-  .row
-    .col-md-5
-      p.text-center
-        = image_tag "phone.res.png"
-    .col-md-7
-      #promo-text
-        h1.brand АллегроТайм
-        p.concept Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти на проход поезда Аллегро
+  .container
+    .row
+      .col-md-5
+        p.text-center
+          = image_tag "phone.res.png", width: 300
+      .col-md-7
+        #promo-text
+          h1.brand АллегроТайм
+          p.concept Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти на проход поезда Аллегро
 
 
 #screenshots
-  .row
-    = partial "screenshot", locals: { image_name: "w-screen-1-red.jpg", title: "Открыт ли переезд?" }
-    = partial "screenshot", locals: { image_name: "w-screen-2.jpg", title: "Статус всех переездов" }
-    = partial "screenshot", locals: { image_name: "w-screen-3.jpg", title: "Расписание переезда" }
-    = partial "screenshot", locals: { image_name: "w-screen-4.jpg", title: "Расписание Аллегро" }
-    = partial "screenshot", locals: { image_name: "w-screen-5.jpg", title: "Карта переездов" }
-    = partial "screenshot", locals: { image_name: "w-screen-6-all.jpg", title: "Работает на iPad" }
+  .container
+    .row
+      = partial "screenshot", locals: { image_name: "w-screen-1-red.jpg", title: "Открыт ли переезд?" }
+      = partial "screenshot", locals: { image_name: "w-screen-2.jpg", title: "Статус всех переездов" }
+      = partial "screenshot", locals: { image_name: "w-screen-3.jpg", title: "Расписание переезда" }
+      = partial "screenshot", locals: { image_name: "w-screen-4.jpg", title: "Расписание Аллегро" }
+      = partial "screenshot", locals: { image_name: "w-screen-5.jpg", title: "Карта переездов" }
+      = partial "screenshot", locals: { image_name: "w-screen-6-all.jpg", title: "Работает на iPad" }
 
 #support
-  p.text-center 
-    | Если расписание переезда изменилось более чем на три минуты и вас это сильно беспокоит — пришлите мне фото синей таблички расположенной около переезда: 
-    = link_to "allegrotime@yandex.ru"
-    |.
+  .container
+    p.text-center 
+      | Если расписание переезда изменилось более чем на три минуты и вас это сильно беспокоит — пришлите мне фото синей таблички расположенной около переезда: 
+      = link_to "allegrotime@yandex.ru"
+      |.
   
 #footer
-  hr
-  p 
-    | &copy; 2012–2015 Дмитрий Сокуренко
-    br
-    = link_to "allegrotime@yandex.ru"
+  .container
+    p 
+      | &copy; 2012–2015 Дмитрий Сокуренко
+      br
+      = link_to "allegrotime@yandex.ru"

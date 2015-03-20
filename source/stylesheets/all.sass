@@ -1,15 +1,22 @@
+@import 'ext'
+
 #billboard
-  padding: 50px 0 0
+  padding: 10px 0 0
   // background: linear-gradient(135deg, #C5E8FF, #D8E7EE)
+  background: #f2f2f2
 
   #promo-text
     padding-top: 250px
     font-weight: 200
+    @media screen and (max-width: $screen-md-min)
+      padding: 10px 0 40px
   
   h1.brand
     font-size: 96px
     text-align: center
     font-weight: 300
+    @media screen and (max-width: $screen-md-min)
+      font-size: 48px
     
   h2
     font-size: 28px
@@ -21,23 +28,25 @@
 
     
 #screenshots
-  padding: 50px 0
-
+  background: #fafafa
   .screenshot
-    padding-top: 40px
+    padding-top: 50px
   
   h3
     text-align: center
     font-size: 28px
-    margin-bottom: 15px
+    margin-bottom: 20px
 
 #support
-  padding: 30px 0
+  background: #f2f2f2
+  padding: 50px 0
 
 #footer
-  padding: 50px
+  padding: 50px 0
   text-align: right
   color: #999
   p
     font-size: 16px
     line-height: 1.6
+    @media screen and (max-width: $screen-md-min)
+      text-align: center
