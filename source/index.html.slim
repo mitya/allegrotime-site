@@ -12,6 +12,11 @@ title: Welcome to Middleman
         #promo-text
           h1.brand АллегроТайм
           p.concept Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти на проход поезда Аллегро
+          p.appstore-text
+            small Доступно для iPhone и iPad
+          p.appstore-badge
+            a href="https://itunes.apple.com/ru/app/allegrotajm/id524992172" target="_blank"
+              = image_tag "appstore-badge.png"
 
 
 #screenshots
@@ -22,7 +27,7 @@ title: Welcome to Middleman
       = partial "screenshot", locals: { image_name: "w-screen-3.jpg", title: "Расписание переезда" }
       = partial "screenshot", locals: { image_name: "w-screen-4.jpg", title: "Расписание Аллегро" }
       = partial "screenshot", locals: { image_name: "w-screen-5.jpg", title: "Карта переездов" }
-      = partial "screenshot", locals: { image_name: "w-screen-6-all.jpg", title: "Работает на iPad" }
+      / = partial "screenshot", locals: { image_name: "w-screen-6-all.jpg", title: "Работает на iPad" }
 
 #support
   .container
