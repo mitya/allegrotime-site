@@ -6,11 +6,11 @@ title: АллегроТайм
 #billboard
   .container
     #feedback-link
-      a.btn.btn-sm.btn-success href='#support' Обратная связь
+      a.btn.btn-sm.btn-success href='/comments.html' target='_blank' Обратная связь
     .row
       .col-md-5
         p.text-center        
-          = image_tag "phone.res.png", width: 300
+          = image_tag "phone.res.png", width: 300, height: 761
       .col-md-7
         #promo-text
           h1.brand АллегроТайм
@@ -19,7 +19,7 @@ title: АллегроТайм
             small Доступно для iPhone и iPad
           p.appstore-badge
             a href="https://itunes.apple.com/ru/app/allegrotajm/id524992172" target="_blank"
-              = image_tag "appstore-badge.png"
+              = image_tag "appstore-badge.png", width: 270, height: 80
 
 
 #screenshots
@@ -37,6 +37,8 @@ title: АллегроТайм
     p.text-center 
       | Если расписание переезда изменилось более чем на три минуты и вас это сильно беспокоит — пришлите мне фото синей таблички расположенной около переезда — 
       = link_to "allegrotime@yandex.ru"
+      '  или 
+      = link_to "оставьте комментарий", '/comments.html', target: 'blank'
 
 #footer
   .container
