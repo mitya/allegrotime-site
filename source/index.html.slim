@@ -10,22 +10,23 @@ title: Welcome to Middleman
     .col-md-7
       #promo-text
         h1.brand АллегроТайм
-        h2 Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти из-за прохода поезда Аллегро
+        p.concept Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти на проход поезда Аллегро
 
 
 #screenshots
   .row
-    = partial "screenshot", locals: { image_name: "mockup-5-1", title: "Открыт ли переезд?" }
-    = partial "screenshot", locals: { image_name: "mockup-5-2", title: "Статус всех переездов" }
-    = partial "screenshot", locals: { image_name: "mockup-5-3", title: "Расписание переезда" }
-    = partial "screenshot", locals: { image_name: "mockup-5-4", title: "Расписание Аллегро" }
-    = partial "screenshot", locals: { image_name: "mockup-5-5", title: "Карта переездов" }
-    = partial "screenshot", locals: { image_name: "mockup-ipad-v-350", title: "Работает на iPad" }
+    = partial "screenshot", locals: { image_name: "w-screen-1-red.jpg", title: "Открыт ли переезд?" }
+    = partial "screenshot", locals: { image_name: "w-screen-2.jpg", title: "Статус всех переездов" }
+    = partial "screenshot", locals: { image_name: "w-screen-3.jpg", title: "Расписание переезда" }
+    = partial "screenshot", locals: { image_name: "w-screen-4.jpg", title: "Расписание Аллегро" }
+    = partial "screenshot", locals: { image_name: "w-screen-5.jpg", title: "Карта переездов" }
+    = partial "screenshot", locals: { image_name: "w-screen-6-all.jpg", title: "Работает на iPad" }
 
 #support
   p.text-center 
-    | Если вы знаете что расписание переезда изменилось более чем на три минуты — пришлите мне фото синий таблички расположенной около переезда: 
+    | Если расписание переезда изменилось более чем на три минуты и вас это сильно беспокоит — пришлите мне фото синей таблички расположенной около переезда: 
     = link_to "allegrotime@yandex.ru"
+    |.
   
 #footer
   hr
