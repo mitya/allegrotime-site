@@ -2,8 +2,7 @@
 
 #billboard
   padding: 10px 0 0
-  // background: linear-gradient(135deg, #C5E8FF, #D8E7EE)
-  background: #f2f2f2
+  background: linear-gradient(0deg, #f2f2f2, #aaa) #f2f2f2
 
   #promo-text
     padding-top: 250px
@@ -17,6 +16,9 @@
     font-weight: 300
     @media screen and (max-width: $screen-md-min)
       font-size: 48px
+
+    img
+      vertical-align: baseline
     
   h2
     font-size: 28px
@@ -33,6 +35,19 @@
 
   p.appstore-badge
     text-align: center
+    
+  #feedback-link
+    position: absolute
+    top: 25px
+    right: 25px
+    text-align: right
+    padding: 10px 5px
+    a.btn
+      font-size: 14px
+      border-radius: 6px
+    @media screen and (max-width: $screen-xs-min)
+      position: static
+      // display: none
     
 #screenshots
   background: #fafafa

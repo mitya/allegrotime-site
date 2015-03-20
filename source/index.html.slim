@@ -4,13 +4,17 @@ title: Welcome to Middleman
 
 #billboard
   .container
+    #feedback-link
+      a.btn.btn-sm.btn-success href='#feedback' Обратная связь
+
     .row
       .col-md-5
-        p.text-center
+        p.text-center        
           = image_tag "phone.res.png", width: 300
       .col-md-7
         #promo-text
           h1.brand АллегроТайм
+          / = image_tag "appicon.png", height: '60'
           p.concept Знает когда закрываются все переезды в Санкт-Петербурге и Ленобласти на проход поезда Аллегро
           p.appstore-text
             small Доступно для iPhone и iPad
