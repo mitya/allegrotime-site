@@ -4,4 +4,4 @@ $ divshot auth:token
 
 $ divshot promote development production
 
-$ divshot domains:add www.example.com
+$ divshot domains:add allegrotime.sokurenko.name
