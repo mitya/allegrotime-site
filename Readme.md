@@ -5,3 +5,9 @@ $ divshot auth:token
 $ divshot promote development production
 
 $ divshot domains:add allegrotime.sokurenko.name
+
+
+## Promo image generation
+
+  http://mockuphone.com/
+  
