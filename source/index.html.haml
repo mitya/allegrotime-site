@@ -26,7 +26,7 @@ title: АллегроТайм
   .container
     .row
       = partial "screenshot", locals: { image_name: "w-screen-1-red.jpg", title: "Открыт ли переезд?" }
-      = partial "screenshot", locals: { image_name: "w-screen-2.jpg", title: "Статус всех переездов" }
+      = partial "screenshot", locals: { image_name: "w-screen-2.jpg", title: "Статус переездов" }
       = partial "screenshot", locals: { image_name: "w-screen-3-red.jpg", title: "Расписание переезда" }
       = partial "screenshot", locals: { image_name: "w-screen-4.jpg", title: "Расписание Аллегро" }
       = partial "screenshot", locals: { image_name: "w-screen-5.jpg", title: "Карта переездов" }
@@ -43,7 +43,7 @@ title: АллегроТайм
   .container
     %p.text-center
       Если расписание переезда изменилось более чем на три минуты и вас это сильно беспокоит — пришлите мне фото синей таблички расположенной около переезда —
-      = link_to "allegrotime@yandex.ru"
+      = mail_to "allegrotime@yandex.ru"
       или
       = link_to "оставьте комментарий", '/comments', target: 'blank'
 
@@ -52,4 +52,4 @@ title: АллегроТайм
     %p
       &copy; 2012–2015 Дмитрий Сокуренко
       %br
-      = link_to "allegrotime@yandex.ru"
+      = mail_to "allegrotime@yandex.ru"
