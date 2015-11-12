@@ -5,5 +5,16 @@
     "firebase.json",
     "**/.*",
     "**/node_modules/**"
+  ],
+  "headers": [
+    {
+      "source" : "/data/*.json",
+      "headers" : [
+        {
+          "key" : "Access-Control-Allow-Origin",
+          "value" : "*"
+        }
+      ]
+    }
   ]
 }
