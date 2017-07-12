@@ -1,20 +1,22 @@
 {
-  "firebase": "allegrotime",
-  "public": "build",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ],
-  "headers": [
-    {
-      "source" : "/data/*.json",
-      "headers" : [
-        {
-          "key" : "Access-Control-Allow-Origin",
-          "value" : "*"
-        }
-      ]
-    }
-  ]
+  "hosting": {
+    "firebase": "allegrotime",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source" : "/data/*.json",
+        "headers" : [
+          {
+            "key" : "Access-Control-Allow-Origin",
+            "value" : "*"
+          }
+        ]
+      }
+    ]
+  }
 }
